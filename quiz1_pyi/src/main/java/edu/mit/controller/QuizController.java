@@ -32,6 +32,7 @@ public class QuizController {
 	public String quiz2(TwoVO vo, Model model) {
 		log.info("수집된 내용:"+vo);
 		
+		service.input(vo);
 		model.addAttribute("sum",service.allsum(vo));
 		return "/quiz/result";
 	}
