@@ -10,12 +10,8 @@ public class QuizController {
 	
 	@GetMapping("/quiz/quiz1")
 	public void quiz(Model model) {
-		model.addAttribute("today", "오늘은 금요일");
-		
+		model.addAttribute("today", "오늘은 금요일");		
 	}
-	
-	
-	
 
 
 }
